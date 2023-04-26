@@ -7,10 +7,6 @@ on:
     branches:
       - "main"
 
-env:
-  EXAMPLES:
-    [angular-example, react-example, react-tailwind-example, vue-example]
-
 jobs:
   cancel-previous:
     name: Cancel Previous Runs
@@ -25,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        example: $EXAMPLES
+        example: [angular-example, react-example, react-tailwind-example, vue-example]
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v3
