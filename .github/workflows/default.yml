@@ -21,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        example: [angular, react, react-tailwind, vue]
+        example: [angular-example, react-example, react-tailwind-example, vue-example]
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v3
