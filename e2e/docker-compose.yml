@@ -1,0 +1,19 @@
+services:
+  playwright:
+    stdin_open: true
+    tty: true
+    env_file: .env
+    build:
+      context: "../"
+      dockerfile: "./e2e/Dockerfile"
+      target: "playwright"
+    volumes:
+      - "./__snapshots__:/e2e/__snapshots__"
+      - "./tests:/e2e/tests"
+      - "./../build/:/build"
+      - type: bind
+        source: ./playwright.config.ts
+        target: /e2e/playwright.config.ts
+      - type: bind
+        source: ./package.json
+        target: /e2e/package.json

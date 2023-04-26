@@ -7,6 +7,10 @@ on:
     branches:
       - "main"
 
+env:
+  EXAMPLES:
+    [angular-example, react-example, react-tailwind-example, vue-example]
+
 jobs:
   cancel-previous:
     name: Cancel Previous Runs
@@ -21,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        example: [angular-example, react-example, react-tailwind-example, vue-example]
+        example: $EXAMPLES
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v3
@@ -34,3 +38,54 @@ jobs:
       - name: 🚋 Get working directory
         working-directory: ./${{ matrix.example }}
         run: npm run build
+
+      - name: ⬆ Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.example }}
+          path: ./build/${{ matrix.example }}
+
+  test-examples:
+    name: 🧪 with 🎭
+    runs-on: ubuntu-latest
+    needs: [build-examples]
+    container:
+      image: mcr.microsoft.com/playwright:v1.32.3-focal
+    steps:
+      - name: ⬇ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ⬇ Download build
+        uses: actions/download-artifact@v3
+
+      - name: 📥 Download deps
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: ./e2e
+          install-command: npm ci --ignore-scripts
+
+      - name: 📲 Install esbuild (binary workaround)
+        working-directory: ./e2e
+        run: npm i -D esbuild-linux-64
+
+      - name: 👩‍🔬 Test with Playwright 🎭
+        working-directory: ./e2e
+        env:
+          HOME: /root
+        run: npm run test
+
+      - name: 🆙 Upload playwright-report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: ./e2e/playwright-report
+          retention-days: 30
+
+      - name: 🆙 Upload test results
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-results
+          path: ./e2e/test-results
+          retention-days: 30
