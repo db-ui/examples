@@ -3,7 +3,7 @@ node_modules
 npm-debug.log
 .history
 .idea
-**/build/
+**/build/**
 **/dist/
 build-old/
 out/
@@ -23,4 +23,7 @@ tags
 ctags.tmp
 [._]*.un~
 
+!build/.gitkeep
 
+/e2e/playwright-report/
+/e2e/test-results/
