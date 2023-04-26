@@ -21,7 +21,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        example: [angular-example, react-example, react-tailwind-example, vue-example]
+        example:
+          [angular-example, react-example, react-tailwind-example, vue-example]
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v3
@@ -53,6 +54,8 @@ jobs:
 
       - name: ⬇ Download build
         uses: actions/download-artifact@v3
+        with:
+          path: build
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
