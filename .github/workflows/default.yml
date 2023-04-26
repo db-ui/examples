@@ -28,7 +28,8 @@ jobs:
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
-        working-directory: ./${{ matrix.example }}
+        with:
+          working-directory: ./${{ matrix.example }}
 
       - name: 🚋 Get working directory
         working-directory: ./${{ matrix.example }}
