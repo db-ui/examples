@@ -1,0 +1,35 @@
+---
+name: Default Pipeline
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  cancel-previous:
+    name: Cancel Previous Runs
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+  build-examples:
+    name: Build example
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example: [angular, react, react-tailwind, vue]
+    steps:
+      - name: ⬇ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📥 Download deps
+        uses: bahmutov/npm-install@v1
+        working-directory: ./${{ matrix.example }}
+
+      - name: 🚋 Get working directory
+        working-directory: ./${{ matrix.example }}
+        run: npm run build

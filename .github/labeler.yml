@@ -1,0 +1,17 @@
+---
+cicd:
+  - .github/*
+  - .github/**/*
+
+angular:
+  - angular-example/**
+
+react:
+  - react-example/**
+
+react-tailwind:
+  - react-tailwind
+  - -example/**
+
+vue:
+  - vue-example/**

@@ -33,6 +33,17 @@ updates:
     versioning-strategy: increase
 
   - package-ecosystem: "npm"
+    directory: "/react-tailwind-example"
+    open-pull-requests-limit: 10
+    schedule:
+      interval: "daily"
+      time: "02:00"
+      timezone: "Europe/Berlin"
+    pull-request-branch-name:
+      separator: "-"
+    versioning-strategy: increase
+
+  - package-ecosystem: "npm"
     directory: "/vue-example"
     open-pull-requests-limit: 10
     schedule:
