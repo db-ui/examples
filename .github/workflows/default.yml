@@ -25,7 +25,7 @@ jobs:
           [angular-example, react-example, react-tailwind-example, vue-example]
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
@@ -50,7 +50,7 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.32.3-focal
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: ⬇ Download build
         uses: actions/download-artifact@v3
