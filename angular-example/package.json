@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development"
   },
   "dependencies": {
-    "@angular/animations": "^17.0.2",
+    "@angular/animations": "^17.0.4",
     "@angular/common": "^17.0.3",
     "@angular/compiler": "^17.0.3",
     "@angular/core": "^17.0.2",
