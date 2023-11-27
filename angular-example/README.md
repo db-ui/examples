@@ -10,11 +10,11 @@
 
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
-@use "@db-ui/components/build/styles/db-ui-42-webpack" as *;
+@forward "@db-ui/components/build/styles/db-ui-42-webpack";
 // We use $db-spacing-fixed-md variable so we need to import the file where the variable is defined
-@use "@db-ui/foundations/build/scss/variables.global" as *;
+@use "@db-ui/foundations/build/scss/variables";
 // Color-classes are optional, we use them in the example to have easy access to colors
-@import "@db-ui/foundations/build/scss/color-classes";
+@forward "@db-ui/foundations/build/css/colors/classes/all";
 ```
 
 6. Goto `src/app/app.component.html` and replace content with:
@@ -38,21 +38,21 @@
 
 7. Start the app with `npm run start`
 8. All texts should have the same size
-9. Goto `src/app/app.component.html` and update the `class` for each `<div>` with those classes:
-10. `db-ui-functional`
-11. `db-ui-regular`
-12. `db-ui-expressive`
+9. Goto `src/app/app.component.html` and add the `data-tonality="XXX"` attribute for each `<div>` and replace `XXX` with:
+10. `functional`
+11. `regular`
+12. `expressive`
 13. Goto browser; All texts should have different sizes
-14. Goto `src/app/app.component.html` and add additonal classes for each `<div>`:
-15. `db-bg-neutral-3`
-16. `db-bg-success`
-17. `db-bg-success-light`
+14. Goto `src/app/app.component.html` and add `className` with those classes for each `<div>`:
+  1. `db-bg-informational`
+  2. `db-bg-successful`
+  3. `db-bg-successful-transparent-semi`
 18. Goto browser; All containers should have different background and foreground colors
 19. Goto `src/styles.scss` and append a new class:
 
 ```scss
 .container-with-padding {
-  padding: $db-spacing-fixed-md;
+  padding: variables.$db-spacing-fixed-md;
 }
 ```
 
@@ -71,7 +71,7 @@ import { DBButtonModule } from "@db-ui/ngx-components";
   declarations: [AppComponent],
   imports: [BrowserModule, DBButtonModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
