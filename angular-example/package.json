@@ -15,7 +15,7 @@
     "@angular/compiler": "^17.0.6",
     "@angular/core": "^17.0.4",
     "@angular/forms": "^17.0.6",
-    "@angular/platform-browser": "^17.0.6",
+    "@angular/platform-browser": "^17.0.7",
     "@angular/platform-browser-dynamic": "^17.0.6",
     "@angular/router": "^17.0.6",
     "@db-ui/ngx-components": "0.0.61",
