@@ -1,17 +1,20 @@
 ---
 cicd:
-  - .github/*
-  - .github/**/*
+  - changed-files:
+      - any-glob-to-any-file: [".github/*", ".github/**/*"]
 
 angular:
-  - angular-example/**
+  - changed-files:
+      - any-glob-to-any-file: "angular-example/**"
 
 react:
-  - react-example/**
+  - changed-files:
+      - any-glob-to-any-file: "react-example/**"
 
 react-tailwind:
-  - react-tailwind
-  - -example/**
+  - changed-files:
+      - any-glob-to-any-file: ["react-tailwind", "-example/**"]
 
 vue:
-  - vue-example/**
+  - changed-files:
+      - any-glob-to-any-file: "vue-example/**"
