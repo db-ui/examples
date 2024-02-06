@@ -8,7 +8,7 @@
     "dev": "vite --open"
   },
   "dependencies": {
-    "@db-ui/v-components": "^0.0.63",
+    "@db-ui/v-components": "^0.0.64",
     "sass": "^1.70.0",
     "vue": "^3.4.15"
   },
