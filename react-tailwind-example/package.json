@@ -10,7 +10,7 @@
     "start": "vite"
   },
   "dependencies": {
-    "@db-ui/react-components": "^0.0.66",
+    "@db-ui/react-components": "^0.0.67",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
