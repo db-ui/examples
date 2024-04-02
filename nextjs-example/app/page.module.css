@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  max-width: 300px;
+  margin: var(--db-spacing-fixed-sm);
+}
