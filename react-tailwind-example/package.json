@@ -10,13 +10,13 @@
     "start": "vite"
   },
   "dependencies": {
-    "@db-ui/react-components": "^0.0.68",
+    "@db-ui/react-components": "^0.0.69",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.73",
+    "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.23",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
