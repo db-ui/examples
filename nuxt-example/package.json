@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "copy:assets": "cpx 'node_modules/@db-ui/components/build/assets/**' 'assets'"
+  },
+  "dependencies": {
+    "@db-ui/v-components": "^0.0.68",
+    "cpx2": "^7.0.1",
+    "nuxt": "^3.11.1",
+    "sass": "^1.72.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  }
+}
