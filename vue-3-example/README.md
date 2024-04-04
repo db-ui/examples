@@ -37,8 +37,9 @@
 - SSR in nuxt 3 leads to many hydration errors: some components are not usable
 
 - DBNavigationItem:
-  - Sub-sub-navigation on the left: the mouseover state between the second and third level can be lost > the sub-navigation is closed
-  - Sub-sub-navigation on the left: navigation on the fourth level can be outside the screen
+  - Sub-sub-navigation on the left:
+    - the mouseover state between the second and third level can be lost > the sub-navigation is closed
+    - navigation on the fourth level can be outside the screen
   - the prop `backButtonText` must be set individually for each menu level
 
 ## Improvements
