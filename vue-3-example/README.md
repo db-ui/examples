@@ -16,7 +16,7 @@
 ## UX / Design / Animation
 
 - main-navigation:
-  - Toggling active state changes font from regular to bold: width of item changes (spa)
+  - Toggling active state changes font from regular to bold: width of item changes (SPA)
   - (Sub)navigation closes immediately when mouseover leaves element. Very precise operation is required
 - DBDrawer
   - Horizontal fade-in animation appears too fast and rough at large widths
