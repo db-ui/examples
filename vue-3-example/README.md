@@ -33,7 +33,7 @@
   - even if prop `:disabled="true"` is set, the linked **tooltip** appears
 - DBHeader: the value from the prop `burgerMenuLabel` is rendered in the markup, but is **not** visible on the page
 - DBDrawer: if the contents are higher than the drawer, they are displayed above the rest of the page / outside the screen. would **overflow scrolling** make sense here?
-- DBTextarea: does `resize: horizontal make sense here?
+- DBTextarea: does `resize: horizontal` make sense here?
 - SSR in nuxt 3 leads to many hydration errors: some components are not usable
 
 - DBNavigationItem:
@@ -43,5 +43,5 @@
 
 ## Improvements
 
-- DBCheckbox: v-model does not work
+- DBCheckbox: `v-model` does not work
 - DBRadio: would a componente DBRadioGroup make sense to wrap and handle DBRadios?
