@@ -19,7 +19,7 @@
 - db-main-navigation: directive import leads to error:
   `An unhandled exception occurred: Missing "./components/header/ActionBar.directive" specifier in "@db-ui/ngx-components" package
 See "/private/var/folders/t6/wg_h_yhn4bb6_7g9yn30qqmw0000gn/T/ng-nNRT5n/angular-errors.log" for further details.`
-- db-brand: image not found
+- db-brand: image not found / https://github.com/db-ui/mono/issues/2413
 
 ## Questions
 
