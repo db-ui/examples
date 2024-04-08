@@ -38,7 +38,7 @@
 
 - DBNavigationItem:
   - Sub-sub-navigation on the left:
-    - the mouseover state between the second and third level can be lost > the sub-navigation is closed
+    - the mouseover state between the second and third level can be lost > the sub-navigation is closed https://github.com/db-ui/mono/issues/2196
     - navigation on the fourth level can be outside the screen
   - the prop `backButtonText` must be set individually for each menu level
 
