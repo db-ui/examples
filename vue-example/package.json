@@ -8,14 +8,14 @@
     "dev": "vite --open"
   },
   "dependencies": {
-    "@db-ui/v-components": "^0.0.61",
-    "sass": "^1.69.5",
-    "vue": "^3.3.11"
+    "@db-ui/v-components": "^0.1.0",
+    "sass": "^1.75.0",
+    "vue": "^3.4.23"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.9",
-    "vue-tsc": "^1.8.25"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vue-tsc": "^2.0.13"
   }
 }
