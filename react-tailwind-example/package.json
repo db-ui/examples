@@ -13,11 +13,11 @@
     "@db-ui/react-components": "^0.1.1",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
