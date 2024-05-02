@@ -17,7 +17,7 @@
     "@angular/forms": "^17.3.6",
     "@angular/platform-browser": "^17.3.6",
     "@angular/platform-browser-dynamic": "^17.3.6",
-    "@angular/router": "^17.3.6",
+    "@angular/router": "^17.3.7",
     "@db-ui/ngx-components": "0.1.2",
     "classnames": "^2.5.1",
     "rxjs": "~7.8.1",
