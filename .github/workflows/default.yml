@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         example:
-          [angular-example, react-example, react-tailwind-example, vue-example]
+          [angular17-example, react-example, react-tailwind-example, vue-example]
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
