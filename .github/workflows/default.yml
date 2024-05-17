@@ -22,7 +22,12 @@ jobs:
       fail-fast: false
       matrix:
         example:
-          [angular-example, react-example, react-tailwind-example, vue-example]
+          [
+            angular17-example,
+            react-example,
+            react-tailwind-example,
+            vue-example,
+          ]
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
@@ -52,10 +57,29 @@ jobs:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
 
-      - name: ⬇ Download build
-        uses: actions/download-artifact@v3
+      - name: ⬇ Download build angular
+        uses: actions/download-artifact@v4
         with:
-          path: build
+          name: angular17-example
+          path: ./build/angular17-example
+
+      - name: ⬇ Download build react
+        uses: actions/download-artifact@v4
+        with:
+          name: react-example
+          path: ./build/react-example
+
+      - name: ⬇ Download build react-tailwind
+        uses: actions/download-artifact@v4
+        with:
+          name: react-tailwind-example
+          path: ./build/react-tailwind-example
+
+      - name: ⬇ Download build vue
+        uses: actions/download-artifact@v4
+        with:
+          name: vue-example
+          path: ./build/vue-example
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1

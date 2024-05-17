@@ -5,28 +5,28 @@ import { DBButton } from "@db-ui/v-components";
 <template>
   <main>
     <div
-      data-tonality="functional"
-      class="db-bg-informational container-with-padding"
+      data-density="functional"
+      class="db-informational-bg container-with-padding"
     >
       <h1>db-ui-functional</h1>
       <p>Use this as default for enterprise apps</p>
-      <DBButton icon="account">Test</DBButton>
+      <DBButton icon="user">Test</DBButton>
     </div>
     <div
-      data-tonality="regular"
-      class="db-bg-successful container-with-padding"
+      data-density="regular"
+      class="db-successful-bg-lvl-1 container-with-padding"
     >
       <h1>db-ui-regular</h1>
       <p>Use this as default for consumer apps</p>
-      <DBButton icon="account">Test</DBButton>
+      <DBButton icon="user">Test</DBButton>
     </div>
     <div
-      data-tonality="expressive"
-      class="db-bg-successful-transparent-semi container-with-padding"
+      data-density="expressive"
+      class="db-successful-bg-lvl-2 container-with-padding"
     >
       <h1>db-ui-expressive</h1>
       <p>Use this as default for marketing apps</p>
-      <DBButton icon="account">Test</DBButton>
+      <DBButton icon="user">Test</DBButton>
     </div>
   </main>
 </template>

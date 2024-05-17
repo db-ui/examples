@@ -47,15 +47,15 @@ export default App;
 
 9. Start the app with `npm run dev`
 10. All texts should have the same size
-11. Goto `src/App.tsx` and add the `data-tonality="XXX"` attribute for each `<div>` and replace `XXX` with:
+11. Goto `src/App.tsx` and add the `data-density="XXX"` attribute for each `<div>` and replace `XXX` with:
     1. `functional`
     2. `regular`
     3. `expressive`
 12. Goto browser; All texts should have different sizes
 13. Goto `src/App.tsx` and add `className` with those classes for each `<div>`:
-    1. `db-bg-informational`
-    2. `db-bg-successful`
-    3. `db-bg-successful-transparent-semi`
+    1. `db-informational-bg`
+    2. `db-successful-bg-lvl-1`
+    3. `db-successful-bg-lvl-2`
 14. Goto browser; All containers should have different background and foreground colors
 15. Goto `src/index.scss` and append a new class:
 

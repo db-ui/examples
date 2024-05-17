@@ -11,7 +11,7 @@ function App() {
 			<div className="w-full m:hidden">
 				<Header />
 			</div>
-			<DBSection variant="medium" size="none">
+			<DBSection width="medium" spacing="none">
 				<div className="flex flex-col gap-res-md">
 					<div className="w-full hidden m:block">
 						<Header />
