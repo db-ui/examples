@@ -47,9 +47,9 @@
 13. `expressive`
 14. Goto browser; All texts should have different sizes
 15. Goto `src/app/app.component.html` and add `class` with those classes for each `<div>`:
-16. `db-informational-bg`
-17. `db-successful-bg-lvl-1`
-18. `db-successful-bg-lvl-2`
+    1. `db-informational-bg`
+    2. `db-successful-bg-lvl-1`
+    3. `db-successful-bg-lvl-2`
 19. Goto browser; All containers should have different background and foreground colors
 20. Goto `src/styles.scss` and append a new class:
 
