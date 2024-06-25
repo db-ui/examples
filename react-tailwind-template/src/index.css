@@ -1,0 +1,9 @@
+@import "@db-ui/components/build/styles/db-ui-42-rollup.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}
