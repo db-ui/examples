@@ -13,10 +13,6 @@
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
 @forward "@db-ui/components/build/styles/db-ui-42-rollup";
-// We use $db-spacing-fixed-md variable so we need to import the file where the variable is defined
-@use "@db-ui/foundations/build/scss/variables";
-// Color-classes are optional, we use them in the example to have easy access to colors
-@forward "@db-ui/foundations/build/css/colors/classes/all";
 ```
 
 7. Goto `src/main.ts` and rename `import './style.css'` to `import './style.scss'`.
@@ -51,9 +47,9 @@
     3. `expressive`
 12. Goto browser; All texts should have different sizes
 13. Goto `src/App.vue` and add `class` with those classes for each `<div>`:
-    1. `db-informational-bg`
-    2. `db-successful-bg-lvl-1`
-    3. `db-successful-bg-lvl-2`
+    1. `db-informational-bg-basic-level-1`
+    2. `db-successful-bg-basic-level-1`
+    3. `db-successful-bg-basic-level-2`
 14. Goto browser; All containers should have different background and foreground colors
 15. Goto `src/style.scss` and append a new class:
 

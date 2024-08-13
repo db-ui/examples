@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@db-ui/react-components": "^0.2.1",
+    "@db-ui/react-components": "^0.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "6.23.1"
