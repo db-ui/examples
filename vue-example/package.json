@@ -10,7 +10,7 @@
   "dependencies": {
     "@db-ui/v-components": "^0.3.8",
     "sass": "^1.78.0",
-    "vue": "^3.5.1"
+    "vue": "^3.5.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.3",
