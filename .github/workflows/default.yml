@@ -7,14 +7,11 @@ on:
     branches:
       - "main"
 
-jobs:
-  cancel-previous:
-    name: Cancel Previous Runs
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
+jobs:
   build-examples:
     name: Build example
     runs-on: ubuntu-latest
