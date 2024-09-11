@@ -8,13 +8,6 @@ on:
       - "main"
 
 jobs:
-  cancel-previous:
-    name: Cancel Previous Runs
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
-
   build-examples:
     name: Build example
     runs-on: ubuntu-latest
