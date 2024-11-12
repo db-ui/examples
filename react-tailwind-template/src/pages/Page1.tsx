@@ -13,7 +13,7 @@ const Page1 = () => {
         <p data-font-size="sm">Smaller font-size</p>
         <div className="flex gap-fix-md flex-wrap">
           {/* TODO: Change my icon; https://db-ui.github.io/mono/review/main/foundations/icons/overview */}
-          <DBButton icon="user">Button 1</DBButton>
+          <DBButton icon="person">Button 1</DBButton>
           <DBButton>Button 2</DBButton>
           <DBButton>Button 3</DBButton>
         </div>
