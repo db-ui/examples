@@ -22,7 +22,6 @@ jobs:
           [
             angular17-example,
             react-example,
-            react-tailwind-example,
             vue-example,
           ]
     steps:
