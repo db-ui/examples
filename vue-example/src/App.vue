@@ -10,7 +10,7 @@ import { DBButton } from "@db-ui/v-components";
     >
       <h1>db-ui-functional</h1>
       <p>Use this as default for enterprise apps</p>
-      <DBButton icon="user">Test</DBButton>
+      <DBButton icon="person">Test</DBButton>
     </div>
     <div
       data-density="regular"
@@ -18,7 +18,7 @@ import { DBButton } from "@db-ui/v-components";
     >
       <h1>db-ui-regular</h1>
       <p>Use this as default for consumer apps</p>
-      <DBButton icon="user">Test</DBButton>
+      <DBButton icon="person">Test</DBButton>
     </div>
     <div
       data-density="expressive"
@@ -26,7 +26,7 @@ import { DBButton } from "@db-ui/v-components";
     >
       <h1>db-ui-expressive</h1>
       <p>Use this as default for marketing apps</p>
-      <DBButton icon="user">Test</DBButton>
+      <DBButton icon="person">Test</DBButton>
     </div>
   </main>
 </template>

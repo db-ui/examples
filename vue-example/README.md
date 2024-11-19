@@ -61,5 +61,5 @@
 
 16. Goto `src/App.vue` and add `container-with-padding` class for each `<div>`
 17. Goto browser; All containers should have different paddings
-18. Goto `src/App.vue` and add `import { DBButton } from "@db-ui/v-components";` inside the `<script>` tags and add `<DBButton icon="user">Test</DBButton>` inside each div
+18. Goto `src/App.vue` and add `import { DBButton } from "@db-ui/v-components";` inside the `<script>` tags and add `<DBButton icon="person">Test</DBButton>` inside each div
 19. Goto browser; Button should be visible with different paddings
