@@ -66,12 +66,6 @@ jobs:
           name: react-example
           path: ./build/react-example
 
-      - name: ⬇ Download build react-tailwind
-        uses: actions/download-artifact@v4
-        with:
-          name: react-tailwind-example
-          path: ./build/react-tailwind-example
-
       - name: ⬇ Download build vue
         uses: actions/download-artifact@v4
         with:
