@@ -22,7 +22,7 @@ jobs:
           [
             angular17-example,
             react-example,
-            react-tailwind-example,
+            react-tailwind-template,
             vue-example,
           ]
     steps:
@@ -69,8 +69,8 @@ jobs:
       - name: ⬇ Download build react-tailwind
         uses: actions/download-artifact@v4
         with:
-          name: react-tailwind-example
-          path: ./build/react-tailwind-example
+          name: react-tailwind-template
+          path: ./build/react-tailwind-template
 
       - name: ⬇ Download build vue
         uses: actions/download-artifact@v4
