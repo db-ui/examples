@@ -33,7 +33,7 @@ updates:
     versioning-strategy: increase
 
   - package-ecosystem: "npm"
-    directory: "/react-tailwind-example"
+    directory: "/react-tailwind-template"
     open-pull-requests-limit: 10
     schedule:
       interval: "daily"
