@@ -4,7 +4,8 @@ const Page1 = () => {
   return (
     <div
       className="p-fix-xl" // TODO: Change my padding; https://db-ui.github.io/mono/review/main/foundations/variables/examples
-      data-color="neutral-bg-basic-level-2" // TODO: Change my color; https://db-ui.github.io/mono/review/main/foundations/colors/overview
+      data-container-color="neutral" // TODO: Change my color; https://db-ui.github.io/mono/review/main/foundations/colors/color-classes
+      data-bg-color="basic-level-2" // TODO: Change my color; https://db-ui.github.io/mono/review/main/foundations/colors/color-classes
       data-density="functional" // TODO: Change my density; https://db-ui.github.io/mono/review/main/foundations/densities/examples
     >
       <DBCard className="gap-fix-md">
@@ -19,7 +20,7 @@ const Page1 = () => {
         </div>
         <div className="flex gap-fix-md flex-wrap">
           <DBLink
-            href="https://db-ui.github.io/mono/review/main/foundations/colors/overview"
+            href="https://db-ui.github.io/mono/review/main/foundations/colors/color-classes"
             content="external"
             target="_blank"
           >
