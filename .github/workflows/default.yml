@@ -14,7 +14,7 @@ concurrency:
 jobs:
   build-examples:
     name: Build example
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     strategy:
       fail-fast: false
       matrix:
@@ -45,7 +45,7 @@ jobs:
 
   test-examples:
     name: 🧪 with 🎭
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     needs: [build-examples]
     container:
       image: mcr.microsoft.com/playwright:v1.49.0
