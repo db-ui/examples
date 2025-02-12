@@ -1,4 +1,4 @@
-import { DBButton } from "@db-ui/react-components";
+import { DBButton } from "@db-ux/react-core-components";
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
         data-density="functional"
         className="db-informational-bg-basic-level-1 container-with-padding"
       >
-        <h1>db-ui-functional</h1>
+        <h1>db-ux-functional</h1>
         <p>Use this as default for enterprise apps</p>
         <DBButton icon="person">Test</DBButton>
       </div>
@@ -15,7 +15,7 @@ const App = () => {
         data-density="regular"
         className="db-successful-bg-basic-level-1 container-with-padding"
       >
-        <h1>db-ui-regular</h1>
+        <h1>db-ux-regular</h1>
         <p>Use this as default for consumer apps</p>
         <DBButton icon="person">Test</DBButton>
       </div>
@@ -23,7 +23,7 @@ const App = () => {
         data-density="expressive"
         className="db-successful-bg-basic-level-2 container-with-padding"
       >
-        <h1>db-ui-expressive</h1>
+        <h1>db-ux-expressive</h1>
         <p>Use this as default for marketing apps</p>
         <DBButton icon="person">Test</DBButton>
       </div>

@@ -3,7 +3,7 @@
 1. init new vite project `npm create vite@latest react-example`
 2. `cd react-example`
 3. `npm i sass`
-4. `npm i @db-ui/react-components`
+4. `npm i @db-ux/react-core-components`
 5. Delete unused files:
     1. `src/App.css`
     2. `src/vite-env.d.ts`
@@ -12,7 +12,7 @@
 
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
-@forward "@db-ui/components/build/styles/db-ui-42-rollup";
+@forward "@db-ux/core-components/build/styles/db-ux-42-rollup";
 ```
 
 7. Goto `src/main.tsx` and rename `import './index.css'` to `import './index.scss'`
@@ -23,15 +23,15 @@ const App = () => {
 	return (
 		<main>
 			<div>
-				<h1>db-ui-functional</h1>
+				<h1>db-ux-functional</h1>
 				<p>Use this as default for enterprise apps</p>
 			</div>
 			<div>
-				<h1>db-ui-regular</h1>
+				<h1>db-ux-regular</h1>
 				<p>Use this as default for consumer apps</p>
 			</div>
 			<div>
-				<h1>db-ui-expressive</h1>
+				<h1>db-ux-expressive</h1>
 				<p>Use this as default for marketing apps</p>
 			</div>
 		</main>
@@ -63,5 +63,5 @@ export default App;
 
 16. Goto `src/App.tsx` and add `container-with-padding` class for each `<div>`
 17. Goto browser; All containers should have different paddings
-18. Goto `src/App.tsx` and add `import { DBButton } from "@db-ui/react-components";` to the top of the file and add `<DBButton icon="account">Test</DBButton>` inside each div
+18. Goto `src/App.tsx` and add `import { DBButton } from "@db-ux/react-core-components";` to the top of the file and add `<DBButton icon="account">Test</DBButton>` inside each div
 19. Goto browser; Button should be visible with different paddings

@@ -7,13 +7,13 @@
 3. Which stylesheet format would you like to use? `SCSS`
 4. Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No
 5. `$ cd angular-example`
-6. `$ npm i @db-ui/ngx-components`
+6. `$ npm i @db-ux/ngx-core-components`
 7. Add `"outputHashing": "media"` to the `angular.json` file under `projects/angular-example/architect/build/configurations/development`
 8. Add this to `src/styles.scss`:
 
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
-@forward "@db-ui/components/build/styles/db-ui-42-rollup";
+@forward "@db-ux/core-components/build/styles/db-ux-42-rollup";
 ```
 
 7. Goto `src/app/app.component.html` and replace content with:
@@ -21,15 +21,15 @@
 ```html
 <main>
   <div>
-    <h1>db-ui-functional</h1>
+    <h1>db-ux-functional</h1>
     <p>Use this as default for enterprise apps</p>
   </div>
   <div>
-    <h1>db-ui-regular</h1>
+    <h1>db-ux-regular</h1>
     <p>Use this as default for consumer apps</p>
   </div>
   <div>
-    <h1>db-ui-expressive</h1>
+    <h1>db-ux-expressive</h1>
     <p>Use this as default for marketing apps</p>
   </div>
 </main>
