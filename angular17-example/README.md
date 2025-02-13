@@ -13,7 +13,7 @@
 
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
-@forward "@db-ux/core-components/build/styles/db-ux-42-rollup";
+@forward "@db-ux/core-components/build/styles/rollup";
 ```
 
 7. Goto `src/app/app.component.html` and replace content with:

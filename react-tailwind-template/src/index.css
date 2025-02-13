@@ -1,4 +1,4 @@
-@import "@db-ux/core-components/build/styles/db-ux-42-rollup.css";
+@import "@db-ux/core-components/build/styles/rollup.css";
 
 @tailwind base;
 @tailwind components;
