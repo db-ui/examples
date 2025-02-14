@@ -14,7 +14,7 @@ const Page1 = () => {
         <p data-font-size="sm">Smaller font-size</p>
         <div className="flex gap-fix-md flex-wrap">
           {/* TODO: Change my icon; https://db-ux-design-system.github.io/core-web/review/main/foundations/icons/overview */}
-          <DBButton icon="person">Button 1</DBButton>
+          <DBButton icon="plus">Button 1</DBButton>
           <DBButton>Button 2</DBButton>
           <DBButton>Button 3</DBButton>
         </div>

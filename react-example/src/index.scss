@@ -2,8 +2,6 @@
 @forward "@db-ux/core-components/build/styles/rollup";
 // We use $db-spacing-fixed-md variable so we need to import the file where the variable is defined
 @use "@db-ux/core-foundations/build/styles/variables";
-// Color-classes are optional, we use them in the example to have easy access to colors
-@forward "@db-ux/core-foundations/build/css/colors/classes/all";
 
 // Example styles
 .container-with-padding {

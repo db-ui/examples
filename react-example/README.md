@@ -12,7 +12,7 @@
 
 ```scss
 // Combined dependencies like variables, colors and tonality and all components
-@forward "@db-ux/core-components/build/styles/db-ux-42-rollup";
+@forward "@db-ux/core-components/build/styles/rollup";
 ```
 
 7. Goto `src/main.tsx` and rename `import './index.css'` to `import './index.scss'`
@@ -49,9 +49,9 @@ export default App;
     3. `expressive`
 12. Goto browser; All texts should have different sizes
 13. Goto `src/App.tsx` and add `className` with those classes for each `<div>`:
-    1. `db-informational-bg-basic-level-1`
-    2. `db-successful-bg-basic-level-1`
-    3. `db-successful-bg-basic-level-2`
+    1. `db-color-informational`
+    2. `db-color-successful`
+    3. `db-color-successful db-bg-color-basic-level-2`
 14. Goto browser; All containers should have different background and foreground colors
 15. Goto `src/index.scss` and append a new class:
 

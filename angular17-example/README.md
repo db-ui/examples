@@ -43,9 +43,9 @@
 13. `expressive`
 14. Goto browser; All texts should have different sizes
 15. Goto `src/app/app.component.html` and add `class` with those classes for each `<div>`:
-    1. `db-informational-bg-basic-level-1`
-    2. `db-successful-bg-basic-level-1`
-    3. `db-successful-bg-basic-level-2`
+    1. `db-color-informational`
+    2. `db-color-successful`
+    3. `db-color-successful db-bg-color-basic-level-2`
 19. Goto browser; All containers should have different background and foreground colors
 20. Goto `src/styles.scss` and append a new class:
 
@@ -75,5 +75,5 @@ export class AppComponent {
 }
 ```
 
-18. Goto `src/app/app.component.html` and add `<db-button icon="user">Test</db-button>` inside each div
+18. Goto `src/app/app.component.html` and add `<db-button icon="plus">Test</db-button>` inside each div
 19. Goto browser; Button should be visible with different paddings

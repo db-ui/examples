@@ -5,27 +5,27 @@ const App = () => {
     <main>
       <div
         data-density="functional"
-        className="db-informational-bg-basic-level-1 container-with-padding"
+        className="db-color-informational container-with-padding"
       >
         <h1>db-ux-functional</h1>
         <p>Use this as default for enterprise apps</p>
-        <DBButton icon="person">Test</DBButton>
+        <DBButton icon="plus">Test</DBButton>
       </div>
       <div
         data-density="regular"
-        className="db-successful-bg-basic-level-1 container-with-padding"
+        className="db-color-successful container-with-padding"
       >
         <h1>db-ux-regular</h1>
         <p>Use this as default for consumer apps</p>
-        <DBButton icon="person">Test</DBButton>
+        <DBButton icon="plus">Test</DBButton>
       </div>
       <div
         data-density="expressive"
-        className="db-successful-bg-basic-level-2 container-with-padding"
+        className="db-color-successful db-bg-color-basic-level-2 container-with-padding"
       >
         <h1>db-ux-expressive</h1>
         <p>Use this as default for marketing apps</p>
-        <DBButton icon="person">Test</DBButton>
+        <DBButton icon="plus">Test</DBButton>
       </div>
     </main>
   );
