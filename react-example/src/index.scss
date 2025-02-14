@@ -1,9 +1,7 @@
 // Combined dependencies like variables, colors and tonality and all components
-@forward "@db-ui/components/build/styles/db-ui-42-rollup";
+@forward "@db-ux/core-components/build/styles/rollup";
 // We use $db-spacing-fixed-md variable so we need to import the file where the variable is defined
-@use "@db-ui/foundations/build/scss/variables";
-// Color-classes are optional, we use them in the example to have easy access to colors
-@forward "@db-ui/foundations/build/css/colors/classes/all";
+@use "@db-ux/core-foundations/build/styles/variables";
 
 // Example styles
 .container-with-padding {

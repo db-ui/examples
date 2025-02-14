@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DBButton } from '@db-ui/ngx-components';
+import { DBButton } from '@db-ux/ngx-core-components';
 
 @Component({
   selector: 'app-root',

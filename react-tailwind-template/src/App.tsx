@@ -5,7 +5,7 @@ import {
   DBNavigation,
   DBNavigationItem,
   DBPage,
-} from "@db-ui/react-components";
+} from "@db-ux/react-core-components";
 import { Outlet, useLocation } from "react-router";
 import { Link } from "react-router-dom";
 

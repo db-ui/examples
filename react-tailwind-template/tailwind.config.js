@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import tokens from '@db-ui/foundations/build/tailwind/tailwind-tokens.json';
+import tokens from '@db-ux/core-foundations/build/tailwind/tailwind-tokens.json';
 
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
