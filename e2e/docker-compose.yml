@@ -2,7 +2,6 @@ services:
   playwright:
     stdin_open: true
     tty: true
-    env_file: .env
     build:
       context: "../"
       dockerfile: "./e2e/Dockerfile"
