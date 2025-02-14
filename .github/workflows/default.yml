@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-24.04 # Use Ubuntu 24.04 explicitly
     needs: [build-examples]
     container:
-      image: mcr.microsoft.com/playwright:v1.49.0
+      image: mcr.microsoft.com/playwright:v1.50.1
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
