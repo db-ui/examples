@@ -1,0 +1,18 @@
+<db-button (click)="changeDensity('functional')" describedbyid="tooltip-01">Density functional
+  <db-tooltip id="tooltip-01">Tooltip</db-tooltip>
+</db-button>
+<db-button (click)="changeDensity('regular')">Density regular</db-button>
+<db-button (click)="changeDensity('expressive')">Density expressive</db-button>
+
+<section [ngClass]="getDensityClass()">
+  <h1>headlines works!</h1>
+  <h2>headlines works!</h2>
+  <h3>headlines works!</h3>
+  <h4>headlines works!</h4>
+  <h5>headlines works!</h5>
+  <h6>headlines works!</h6>
+
+
+  <p>paragraph</p>
+  <small>small text</small>
+</section>
